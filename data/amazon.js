@@ -1,5 +1,8 @@
+
+let productsHTML;
+
 products.forEach((product) => {
-  let html = `
+  productsHTML += `
   <div class="product-container">
   <div class="product-image-container">
     <img class="product-image"
@@ -19,7 +22,7 @@ products.forEach((product) => {
   </div>
 
   <div class="product-price">
-    $${product.priceCents}
+    $${product.priceCents / 100}
   </div>
 
   <div class="product-quantity-container">
@@ -50,3 +53,5 @@ products.forEach((product) => {
 </div>
   `;
 });
+
+console.log(productsHTML);
