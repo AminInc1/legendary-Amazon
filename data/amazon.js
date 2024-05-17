@@ -88,6 +88,7 @@ document.querySelector('.js-display-product')
          cart.forEach((item) =>{
           cartQuantity += item.quantity
          });
+         
          console.log(cartQuantity);
          console.log(cart);
       });
