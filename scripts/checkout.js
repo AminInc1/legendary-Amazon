@@ -8,7 +8,9 @@ cart.forEach((cartItem) => {
 
  const productId = cartItem.productId;
 
-  let matchingProduct;
+
+
+  let matchingProduct;git 
 
   products.forEach((product) =>{
     if (product.id === productId){
